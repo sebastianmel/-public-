@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/lib/FavIcon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/lib/FavIcon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/lib/FavIcon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/lib/FavIcon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/lib/FavIcon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/lib/FavIcon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/lib/FavIcon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/lib/FavIcon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/lib/FavIcon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/lib/FavIcon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/lib/FavIcon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/lib/FavIcon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/lib/FavIcon/favicon-16x16.png">
+<link rel="manifest" href="/lib/FavIcon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#000000">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin-Access</title>
+  <link rel="stylesheet" href="./connection.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <main>
+  <section class="loginB">
+    <div class="login">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" id="sub">Submit</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

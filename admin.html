@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/lib/FavIcon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/lib/FavIcon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/lib/FavIcon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/lib/FavIcon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/lib/FavIcon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/lib/FavIcon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/lib/FavIcon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/lib/FavIcon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/lib/FavIcon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/lib/FavIcon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/lib/FavIcon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/lib/FavIcon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/lib/FavIcon/favicon-16x16.png">
+<link rel="manifest" href="/lib/FavIcon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#000000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DES DATES </title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background: url(./lib/the2.jpg);
+            background-size: cover;
+            color:white;
+            
+        }
+        .form{
+            /* margin-left: 50%; */
+            border: none;
+            /* width: fit-content; */
+        }
+        
+        #result_form {
+            border-right: 2px red solid;
+            border-left: 2px red solid;
+            
+        }
+        button{
+            background-color: rosybrown;
+            border: 2px red solid;
+            border-radius: 12px;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <main class="container mt-3">
+   
+        
+        
+        <div class="row">
+    
+            <!-- LISTE  -->
+            <div class="col-md-6">
+                <hr>
+                <form class="form form" id="addStudentForm">
+                    <h3>Region et ville</h3>
+                <div class="form-group">
+                        <input required type="text" class="form-control" id="nom" placeholder="région">
+                        <input required type="text" class="form-control" id="prénom" placeholder="ville">
+                        
+                        <h4>heure</h4>
+                        début<input type="time" id="heure1" name="appt"
+                        min="00:00" max="23:59" required> fin<input type="time" id="heure2" name="appt1"
+                        min="00:00" max="23:59" required>
+
+                        <h4>Date</h4>
+                        <input type="date" id='date'class="form-control" placeholder="date" value="">
+    
+                        <h4>Télephone </h4>
+                        <input type="" id="tel"  placeholder="tel" value=""  required minlength="0" maxlength="10" size="17">
+    
+                        
+    
+                  
+                    
+                    <button type="submit" class="btn btn-success">Valider</button>
+                    
+                    
+                </div>
+                </form>
+            </div>
+           
+        </div>
+        <hr>
+        <div id="result_form">
+            <div>
+            
+                <p>Liste :</p>
+                    <ul id="data">
+                        
+                    <!-- Affiches les informations des élèves -->
+                    
+                </ul>
+                <button id="suppression">suppression des données</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- jQuery et Bootstrap-->
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    
+    <!-- SDK Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+<script src="app1.js" type="module"></script>
+</body>
+</html>

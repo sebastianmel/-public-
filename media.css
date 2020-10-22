@@ -1,0 +1,87 @@
+
+@media (pointer: coarse) and (orientation : portrait){
+    /* executé uniquement si le device est un mobile en orientation portrait (vertical)*/
+    .pop{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 790px){
+    .top{
+        font-size: 20px;
+    }
+
+    .album{
+        display: block;
+        text-align: center;
+        
+    }
+    .txt_album{
+        width: 100%;
+    }
+    .poster{
+        margin-left: 15%;
+    }
+    .rightPs{
+        width: 70%;
+        align-items: center;
+    }
+    .info_artiste{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        margin-left: 70px;
+        height:180px;
+    }
+
+    .right{
+        width: 80%;
+        border: none;
+        text-align: center;
+        margin-left: 10%;
+    }
+   
+    .txt_tourDAD{
+        width: 300px;
+    }
+    .txt_tour{
+        width: 300px;
+        height: 210px;
+    }
+
+}
+
+@media screen and (max-width: 660px){
+    .tour{
+        display: block;
+        text-align: center;
+    }
+    .txt_tour{
+        width: 300px;
+        height: 200px;
+        margin-left: 15%;
+    }
+    .poster2{
+        margin-left: 30%;
+        height: 80px;
+    }
+    #btn_tour{
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .top{
+        font-size: 14px;
+    }
+}
+@media screen and (max-height: 350px){
+    .top{
+        font-size: 14px;
+    }
+}
+
+
